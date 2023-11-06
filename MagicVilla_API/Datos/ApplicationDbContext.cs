@@ -11,7 +11,7 @@ namespace MagicVilla_API.Datos
         }
 
         public DbSet<Villa> Villas { get; set; }
-
+        public DbSet<VillaNumber> VillasNumber { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,3 +46,10 @@ namespace MagicVilla_API.Datos
         }
     }
 }
+
+/*
+ Add migration: 
+    Run in Package Manager Console: 
+    1. add-migration <Name>
+    2. update-database
+ */
